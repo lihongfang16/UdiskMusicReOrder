@@ -46,7 +46,7 @@ jobs:
         powershell Compress-Archive -Path release\* -DestinationPath UdiskMusicReOrder-${{ github.ref_name }}.zip
     
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: UdiskMusicReOrder-${{ github.ref_name }}
         path: UdiskMusicReOrder-${{ github.ref_name }}.zip
