@@ -29,6 +29,7 @@ jobs:
         pyinstaller --onefile --windowed --name="UdiskMusicReOrder" src/main.py
     
     - name: Create release package
+      shell: cmd
       run: |
         mkdir release
         copy dist\UdiskMusicReOrder.exe release\
