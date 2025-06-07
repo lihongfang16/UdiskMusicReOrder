@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: write  # 允许创建Release和写入仓库内容
     
     steps:
     - name: Checkout code
